@@ -35,8 +35,10 @@ INSTALLED_APPS = [
     'social_django',
     'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
+    'django_filters',
 
     'accounts',
+    'allpets',
 ]
 
 MIDDLEWARE = [
