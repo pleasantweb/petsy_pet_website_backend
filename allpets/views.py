@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from allpets.serializers import PetBreedSerializer
 from allpets.models import PetBreed
-from rest_framework.permissions import IsAdminUser,BasePermission
+from rest_framework.permissions import IsAdminUser,BasePermission,SAFE_METHODS
 from django_filters.rest_framework import DjangoFilterBackend
 # Create your views here.
 class ReadOnly(BasePermission):
